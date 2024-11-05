@@ -1,0 +1,9 @@
+broad-exception-caught
+c-extension-no-member (looks like false positive)
+duplicate-code (setup.py stuff)
+global-statement
+global-variable-not-assigned
+import-error (due to rsatool, consider making it obsolete)
+import-outside-toplevel (badkeys optional modules)
+inconsistent-return-statements
+redefined-outer-name

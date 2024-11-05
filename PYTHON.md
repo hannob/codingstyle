@@ -36,7 +36,7 @@ pylint
 
 Very extensive, but comes with long list of rules I don't want.
 
-See [pylint rules disabled permanently](python/pylint-disabled.txt) and [pylint rules
+See [pylint rules disabled permanently](python/pylint-disable.txt) and [pylint rules
 disabled that I might reconsider](python/pylint-reconsider.txt).
 
 Currently, not all my code is compliant, should be fixed ASAP.
@@ -46,7 +46,7 @@ ruff
 
 Very extensive, enable ALL rules and selectively disable modules and rules.
 
-See [ruff rules disabled permanently](python/ruff-disabled.txt) and [ruff rules disabled
+See [ruff rules disabled permanently](python/ruff-disable.txt) and [ruff rules disabled
 that I might reconsider](python/ruff-reconsider.txt).
 
 future

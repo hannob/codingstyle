@@ -1,0 +1,10 @@
+consider-using-with
+design (too-many-*)
+fixme
+invalid-name
+missing-docstring (various)
+no-member (appears to generate false positives with gmpy2)
+possibly-used-before-assignment (has false positives, see rpter)
+protected-access
+too-many-lines
+unused-argument (hard to avoid with badkeys api design)
