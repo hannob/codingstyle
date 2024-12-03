@@ -1,0 +1,20 @@
+#!/bin/bash
+
+RUFFNEW=$(echo $(cat ruff-* | sed -e 's: .*::g') | sed -e 's: :,:g')
+
+source <(grep ^RUFFIG= runpyci.sh)
+if [ "$RUFFIG" = "$RUFFNEW" ]; then
+	echo "ruff ok"
+else
+	echo "please update RUFFIG:"
+	echo RUFFIG=\"$RUFFNEW\"
+fi
+
+PYLINTNEW=$(echo $(cat pylint-* | sed -e 's: .*::g') | sed -e 's: :,:g')
+source <(grep ^PYLINTIG= runpyci.sh)
+if [ "$PYLINTIG" = "$PYLINTNEW" ]; then
+	echo "pylint ok"
+else
+	echo "please update PYLINTIG:"
+	echo PYLINTIG=\"$PYLINTNEW\"
+fi
