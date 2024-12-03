@@ -31,6 +31,18 @@ Finds unused imports and other issues.
 
 `pyflakes [files]`
 
+dlint
+-----
+
+Security tool, implemented as ruleset for flake8.
+
+Disabled rules:
+
+* DUO107: Obsolete XML API warnings
+* DUO131,DUO123: Warnings about disabled TLS certificate validation
+
+`flake8 --select=DUO --ignore=DUO107,DUO123,DUO131 [files]`
+
 pylint
 ------
 
