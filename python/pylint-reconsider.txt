@@ -7,3 +7,4 @@ import-error (due to rsatool, consider making it obsolete)
 import-outside-toplevel (badkeys optional modules)
 inconsistent-return-statements
 redefined-outer-name
+unspecified-encoding
