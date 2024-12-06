@@ -1,5 +1,5 @@
 #!/bin/bash
-# last update: 2024-12-06
+# last update: 2024-12-07
 # https://github.com/hannob/codingstyle
 set -euo pipefail
 
