@@ -3,6 +3,7 @@ design (too-many-*)
 fixme
 invalid-name
 missing-docstring (various)
+modified-iterating-list (sometimes makes sense to append to iterated list)
 no-member (appears to generate false positives with gmpy2)
 possibly-used-before-assignment (has false positives, see rpter)
 protected-access
