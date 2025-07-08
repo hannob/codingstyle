@@ -43,6 +43,13 @@ Disabled rules:
 
 `flake8 --select=DUO --ignore=DUO107,DUO123,DUO131 [files]`
 
+isort
+-----
+
+Sorts imports alphabetically.
+
+Note: Execute within directory to properly detect first party imports.
+
 pylint
 ------
 
@@ -63,9 +70,6 @@ that I might reconsider](python/ruff-reconsider.txt).
 
 future
 ------
-
-Currently no import sorting, either use isort or ruff's sorting rules. I have some
-projects with special cases that need consideration for exact formatting rules.
 
 Currently no code formatter. black has a tendency to use many line breaks, which often
 makes code less readable. By design, black supports almost no configuration. yapf has
