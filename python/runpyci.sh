@@ -1,5 +1,6 @@
 #!/bin/bash
-# last update: 2025-08-30
+# SPDX-License-Identifier: 0BSD
+# last update: 2025-11-24
 # https://github.com/hannob/codingstyle
 set -euo pipefail
 
