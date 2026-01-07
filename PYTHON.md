@@ -4,6 +4,9 @@ Python
 I use a variety of codingstyle and linting tools in my personal projects. All tools are
 configured for a line length of 100.
 
+I currently run the CI with Python 3.12 and 3.x (latest GitHub-supported branch), and I
+usually do not put extra effort into supporting extremely old Python versions.
+
 pycodestyle
 -----------
 
