@@ -71,6 +71,14 @@ Very extensive, enable ALL rules and selectively disable modules and rules.
 See [ruff rules disabled permanently](python/ruff-disable.txt) and [ruff rules disabled
 that I might reconsider](python/ruff-reconsider.txt).
 
+pyproject
+---------
+
+[pyproject](https://github.com/terror/pyproject) checks `pyproject.toml` files for
+errors, warnings, and consistent formatting.
+
+I run both `pyproject check` and `pyproject format --check`.
+
 future
 ------
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 # SPDX-License-Identifier: 0BSD
-# last update: 2025-11-24
+# last update: 2026-02-04
 # https://github.com/hannob/codingstyle
 set -euo pipefail
 
@@ -18,6 +18,11 @@ flake8 --select=DUO --ignore=DUO107,DUO123,DUO131 $pyfiles
 isort --line-length=100 --diff --check-only .
 pylint --disable=$PYLINTIG $pyfiles
 ruff check --line-length=100 --select=ALL --ignore=$RUFFIG $pyfiles
+
+if [ -e pyproject.toml ]; then
+	pyproject check
+	pyproject format --check
+fi
 
 if [ -d tests ]; then
 	python -m unittest -v
