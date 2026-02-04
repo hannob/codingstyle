@@ -12,7 +12,7 @@ pygrep=$(grep -rl --exclude-dir=.ruff_cache '^#!/usr/bin/python\|^#!/usr/bin/env
 pyfiles=$(echo "$pyfind" "$pygrep" | sort -u)
 
 pycodestyle --max-line-length=100 --ignore=W503,E203 $pyfiles
-pyupgrade --py313-plus $pyfiles
+pyupgrade --py314-plus $pyfiles
 pyflakes $pyfiles
 flake8 --select=DUO --ignore=DUO107,DUO123,DUO131 $pyfiles
 isort --line-length=100 --diff --check-only .
